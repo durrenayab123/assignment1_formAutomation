@@ -1,9 +1,9 @@
-import {Page} from "@playwright/test";
+import {Page, Locator} from "@playwright/test";
 
 export default class Form {
     page: Page;
 
-    #Selectors
+    #Locators
     firstName = "#firstName";
     lastName = "#lastName";
     Email = "#userEmail";
@@ -119,3 +119,4 @@ export default class Form {
         await this.page.locator(this.submitButton).click();
     }
 }
+
